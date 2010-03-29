@@ -1,78 +1,75 @@
-English                 Romanian
--------                 --------
-Barn Owl                Strig?
+﻿Barn Owl                Strigă
 Bee-eater               Prigorie
-Bittern                 Buhai de balt? (fam. st�rcilor)
-Blackbird               Mierl? (fam. sturzilor)
-Brambling               Cintez? (fam. pi?igoilor)
-Bullfinch               Mugurar (fam. pi?igoilor)
-Bunting                 Presur?
+Bittern                 Buhai de baltă (fam. stârcilor)
+Blackbird               Mierlă (fam. sturzilor)
+Brambling               Cinteză (fam. piţigoilor)
+Bullfinch               Mugurar (fam. piţigoilor)
+Bunting                 Presură
 Bustard                 Dropie
-Buzzard                 ?orecar
-Capercaillie            Coco? de munte
-Chiffchaff              Pitulice mic?
+Buzzard                 Şorecar
+Capercaillie            Cocoş de munte
+Chiffchaff              Pitulice mică
 Crane                   Cocor
-Crow                    Cioar?
-Dunnock                 Brum?ri??
-Eagle-owl               Buh?
-Falcon                  ?oim
+Crow                    Cioară
+Dunnock                 Brumăriţă
+Eagle-owl               Buhă
+Falcon                  Şoim
 Fieldfare               Sturz
-Finch                   Pi?igoi (?)
+Finch                   Piţigoi (?)
 Godwit                  Sitar
 Golden Oriole           Grangur
-Goldfinch               Sticlete (fam. pi?igoilor)
+Goldfinch               Sticlete (fam. piţigoilor)
 Grebe                   Corcodel
-Griffon Vulture         Vultur ple?uv sur
-Grouse                  Coco? de munte (?i �nrudite)
+Griffon Vulture         Vultur pleşuv sur
+Grouse                  Cocoş de munte (şi înrudite)
 Harrier                 Erete
-Hawfinch                Botgros (fam. pi?igoilor)
-Hawk                    Uliu
-Helmeted Guineafowl     Bibilic?
-Heron                   St�rc
+Hawfinch                Botgros (fam. piţigoilor)
+Helmeted Guineafowl     Bibilică
+Heron                   Stârc
 Honey Buzzard           Viespar
-Hoopoe                  Pup?z?
-Ibis                    ?ig?na?
-Jackdaw                 St?ncu?? (fam. ciorilor)
-Jay                     Gai?? (fam. ciorilor)
-Kingfisher              Pesc?ru? albastru
+Hoopoe                  Pupăză
+Ibis                    Ţigănaş
+Jackdaw                 Stăncuţă (fam. ciorilor)
+Jay                     Gaiţă (fam. ciorilor)
+Kingfisher              Pescăruş albastru
 Kite                    Gaie
-Lapwing                 Nag�?
-Lark                    Cioc�rlie
+Lapwing                 Nagâţ
+Lark                    Ciocârlie
 Little Owl              Cucuvea
-Magpie                  Co?ofan? (fam. ciorilor)
-Martin                  L?stun (fam. r�ndunicilor)
+Magpie                  Coţofană (fam. ciorilor)
+Martin                  Lăstun (fam. rândunicilor)
 Nightingale             Privighetoare
 Osprey                  Vultur pescar
-Owl                     Bufni??
-Pied Avocet             Cioc-�ntors
-Quail                   Prepeli??
-Partridge               Pot�rniche
-Pipit                   F�s?
+Owl                     Bufniţă
+Pied Avocet             Cioc-întors
+Quail                   Prepeliţă
+Partridge               Potârniche
+Pipit                   Fâsă
 Raven                   Corb
-Rail                    Li?i??
-Robin                   M?c?leandru
-Rock-thrush             Mierla de piatr?
-Roller                  Dumbr?veanc?
-Rook                    Cioar? de sem?n?tur?
-Ruff                    B?t?u?
-Sandgrouse              G?inu?? de step?
-Shrike                  Sfr�ncioc
-Siskin                  Scatiu (fam. pi?igoilor)
-Snipe                   Beca?in?
-Snow Bunting            Pas?rea om?tului
+Rail                    Lişiţă
+Robin                   Măcăleandru
+Rock-thrush             Mierla de piatră
+Roller                  Dumbrăveancă
+Rook                    Cioară de semănătură
+Ruff                    Bătăuş
+Sandgrouse              Găinuşă de stepă
+Shrike                  Sfrâncioc
+Siskin                  Scatiu (fam. piţigoilor)
+Snipe                   Becaţină
+Snow Bunting            Pasărea omătului
 Sparrow                 Vrabie
-Sparrowhawk             Uliu p?s?rar
-Spoonbill               Lop?tar
+Sparrowhawk             Uliu păsărar
+Spoonbill               Lopătar
 Starling                Graur
-Stilt                   Catalig?
-Stork                   Barz?
-Swallow                 R�ndunic?
-Swift                   L?stun mare
-Tern                    Chir? (fam. pesc?rusilor)
-Tit                     Pi?igoi
-Thrush                  Sturz (?i �nrudite)
-Treecreeper             Cojoaic?
+Stilt                   Cataligă
+Stork                   Barză
+Swallow                 Rândunică
+Swift                   Lăstun mare
+Tern                    Chiră (fam. pescărusilor)
+Tit                     Piţigoi
+Thrush                  Sturz (şi înrudite)
+Treecreeper             Cojoaică
 Warbler                 Pitulice
 Wheatear                Pietrar
-White Wagtail           Codobatur?
-Winter Wren             P?n??ru? (Ochiul-boului)
+White Wagtail           Codobatură
+Winter Wren             Pănţăruş (Ochiul-boului)
