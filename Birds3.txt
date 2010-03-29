@@ -1,0 +1,75 @@
+﻿Barn Owl                Strigă
+Bee-eater               Prigorie
+Bittern                 Buhai de baltă (fam. stârcilor)
+Blackbird               Mierlă (fam. sturzilor)
+Brambling               Cinteză (fam. piţigoilor)
+Bullfinch               Mugurar (fam. piţigoilor)
+Bunting                 Presură
+Bustard                 Dropie
+Buzzard                 Şorecar
+Capercaillie            Cocoş de munte
+Chiffchaff              Pitulice mică
+Crane                   Cocor
+Crow                    Cioară
+Dunnock                 Brumăriţă
+Eagle-owl               Buhă
+Falcon                  Şoim
+Fieldfare               Sturz
+Finch                   Piţigoi (?)
+Godwit                  Sitar
+Golden Oriole           Grangur
+Goldfinch               Sticlete (fam. piţigoilor)
+Grebe                   Corcodel
+Griffon Vulture         Vultur pleşuv sur
+Grouse                  Cocoş de munte (şi înrudite)
+Harrier                 Erete
+Hawfinch                Botgros (fam. piţigoilor)
+Helmeted Guineafowl     Bibilică
+Heron                   Stârc
+Honey Buzzard           Viespar
+Hoopoe                  Pupăză
+Ibis                    Ţigănaş
+Jackdaw                 Stăncuţă (fam. ciorilor)
+Jay                     Gaiţă (fam. ciorilor)
+Kingfisher              Pescăruş albastru
+Kite                    Gaie
+Lapwing                 Nagâţ
+Lark                    Ciocârlie
+Little Owl              Cucuvea
+Magpie                  Coţofană (fam. ciorilor)
+Martin                  Lăstun (fam. rândunicilor)
+Nightingale             Privighetoare
+Osprey                  Vultur pescar
+Owl                     Bufniţă
+Pied Avocet             Cioc-întors
+Quail                   Prepeliţă
+Partridge               Potârniche
+Pipit                   Fâsă
+Raven                   Corb
+Rail                    Lişiţă
+Robin                   Măcăleandru
+Rock-thrush             Mierla de piatră
+Roller                  Dumbrăveancă
+Rook                    Cioară de semănătură
+Ruff                    Bătăuş
+Sandgrouse              Găinuşă de stepă
+Shrike                  Sfrâncioc
+Siskin                  Scatiu (fam. piţigoilor)
+Snipe                   Becaţină
+Snow Bunting            Pasărea omătului
+Sparrow                 Vrabie
+Sparrowhawk             Uliu păsărar
+Spoonbill               Lopătar
+Starling                Graur
+Stilt                   Cataligă
+Stork                   Barză
+Swallow                 Rândunică
+Swift                   Lăstun mare
+Tern                    Chiră (fam. pescărusilor)
+Tit                     Piţigoi
+Thrush                  Sturz (şi înrudite)
+Treecreeper             Cojoaică
+Warbler                 Pitulice
+Wheatear                Pietrar
+White Wagtail           Codobatură
+Winter Wren             Pănţăruş (Ochiul-boului)
