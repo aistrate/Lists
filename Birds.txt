@@ -1,4 +1,6 @@
-﻿Barn Owl                Strigă
+﻿English                 Romanian
+-------                 --------
+Barn Owl                Strigă
 Bee-eater               Prigorie
 Bittern                 Buhai de baltă (fam. stârcilor)
 Blackbird               Mierlă (fam. sturzilor)
