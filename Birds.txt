@@ -11,6 +11,7 @@ Capercaillie            Cocoş de munte
 Chiffchaff              Pitulice mică
 Crane                   Cocor
 Crow                    Cioară
+Cuckoo                  Cuc
 Dunnock                 Brumăriţă
 Eagle-owl               Buhă
 Falcon                  Şoim
@@ -40,6 +41,7 @@ Little Owl              Cucuvea
 Magpie                  Coţofană (fam. ciorilor)
 Martin                  Lăstun (fam. rândunicilor)
 Nightingale             Privighetoare
+Nutcracker              Alunar
 Osprey                  Vultur pescar
 Owl                     Bufniţă
 Pied Avocet             Cioc-întors
@@ -48,6 +50,7 @@ Partridge               Potârniche
 Pipit                   Fâsă
 Raven                   Corb
 Rail                    Lişiţă
+Redstart                Codroş (pieptănuş)
 Robin                   Măcăleandru
 Rock-thrush             Mierla de piatră
 Roller                  Dumbrăveancă
