@@ -11,6 +11,7 @@ Bustard                 Dropie
 Buzzard                 Şorecar
 Capercaillie            Cocoş de munte
 Chiffchaff              Pitulice mică
+Coot                    Lişiţă comună (cu cioc şi moţ alb)
 Crane                   Cocor
 Crow                    Cioară
 Cuckoo                  Cuc
@@ -42,6 +43,7 @@ Lark                    Ciocârlie
 Little Owl              Cucuvea
 Magpie                  Coţofană (fam. ciorilor)
 Martin                  Lăstun (fam. rândunicilor)
+Moorhen                 Găinuşă-de-baltă (lişiţă cu cioc şi moţ roşu)
 Nightingale             Privighetoare
 Nutcracker              Alunar
 Osprey                  Vultur pescar
