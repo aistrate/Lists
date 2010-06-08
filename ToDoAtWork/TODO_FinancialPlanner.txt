@@ -4,11 +4,15 @@ Financial Planner:
 * Chance of meeting target (traffic lights) [old Excel sheet]
 * History (Total Portfolio Value)
 
-- Target curve (red) - [new Excel sheet]
-- Extra periodical/initial - [new Excel sheet]
+- Target curve (red) [new Excel sheet]
+- Extra periodical/initial [new Excel sheet]
 - Market uncertainty (SplineRange) [old Excel sheet]
+- store Target amount on the Account (as well as other details: current Yearly Deposit, Years Left, etc.)
+- change field YearsLeft into TargetEndDate
+[
 - popup(s) with details: model composition (pie chart), numerical details (standard deviation etc.)
-- store Target amount on the Account (as well as other details: current Yearly Deposit, Years Remaining, etc.)
+]
 
+- improve query performance of page "Client Portfolios"
+- add switch for page "Client Portfolios" - flags per Contact / per Account
 - combining Extra periodical/initial - should allow amounts LARGER than either of the two
-- improve performance of "Client Portfolios" search page
