@@ -13,6 +13,6 @@ Financial Planner:
 - popup(s) with details: model composition (pie chart), numerical details (standard deviation etc.)
 ]
 
-- improve query performance of page "Client Portfolios"
-- add switch for page "Client Portfolios" - flags per Contact / per Account
+* improve query performance for page "Client Portfolios"
+* add switch for page "Client Portfolios" - flags per Contact / per Account
 - combining Extra periodical/initial - should allow amounts LARGER than either of the two
