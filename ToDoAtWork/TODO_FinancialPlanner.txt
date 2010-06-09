@@ -15,4 +15,5 @@ Financial Planner:
 
 * improve query performance for page "Client Portfolios"
 * add switch for page "Client Portfolios" - flags per Contact / per Account
+* find better icons for the color flags (red/yellow/green); e.g., Mac OS X Aqua-style lights (close/minimize/maximize window)
 - combining Extra periodical/initial - should allow amounts LARGER than either of the two
