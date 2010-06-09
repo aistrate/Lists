@@ -1,0 +1,3 @@
+Questions:
+
+- field 'Resterende looptijd' (YearsLeft) - should it become a date? If yes, how will the investment evolve in the "odd" period after the last yearly interest calculation? Or will the "odd" period be BEFORE the first calculation? (Should we keep track of the last interest calculation date for every account?)
