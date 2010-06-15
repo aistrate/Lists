@@ -1,0 +1,22 @@
+Michel van den Akker:
+
+Version 2.0:
+- alerts (either 1. when the flag *changes to* red for an account [which involves keeping a history/last value], or 2. when a flag *is* red); per remisier employee, every day/week/month (?); in a separate process (batch job)
+
+
+
+
+Michel Klaster:
+
+Version 1.0:
+- sliders should go beyond the 50%-chance value (the proposed deposits); the limit amounts should be double the proposed deposits (200%); always show the *proposed* deposit amounts (for reference)
+
+- calculate all formulas *per month* (instead of per year); monthly volatility etc. should be used; the *target end date* should be stored, not the number of years; the time span of the charts (and of all calculations) should be measured in *whole months*, not whole years
+
+- correct the formula for EffectivePeriod, to include the NAVs of periodic deposits (column "C | npv" in the Excel sheet)
+
+
+Version 2.0:
+- show the history of plans; show at least the *original* plan (and maybe also move back-and-forth through successive plans)
+
+- allow more than one withdrawal, for example periodic withdrawals (after retiring); it should be possible to choose a different portfolio model when switching from periodic deposits to withdrawals; there should be two sets of data: two end-dates, two models, two periodic amounts (+/-), two target values (or is the second one always zero?) etc.
