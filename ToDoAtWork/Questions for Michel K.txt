@@ -1,3 +1,9 @@
 Questions:
 
-- field 'Resterende looptijd' (YearsLeft) - should it become a date? If yes, how will the investment evolve in the "odd" period after the last yearly interest calculation? Or will the "odd" period be BEFORE the first calculation? (Should we keep track of the last interest calculation date for every account?)
+- field 'Resterende looptijd' (YearsLeft): should it become a date? If yes, how will the investment evolve in the "odd" period after the last yearly interest calculation? Or will the "odd" period occur BEFORE the first calculation? (Should we keep track of the latest interest calculation date for each account?)
+
+- color flags on page Client Portfolios: should tooltips show "Cloudy with a bit of sun (50% to 79%)", or the actual figure, e.g. "69%"? (with/without description?)
+
+- translations: "Market uncertainty", "History", "Volatility" ("Volatiliteit"?)
+
+- should the series (in charts) be calculated per month/quarter, instead of per year? If yes, how is StandardDeviation (volatility) to be calculated for the shorter interval, since it is always given on a yearly basis? Calculating series per year is a problem, because the IRR will not be correct (and therefore also the Chance of meeting the target)

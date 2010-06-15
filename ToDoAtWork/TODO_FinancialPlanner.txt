@@ -4,10 +4,10 @@ Financial Planner:
 * Chance of meeting target (traffic lights) [old Excel sheet]
 * History (Total Portfolio Value)
 
-- Target curve (red) [new Excel sheet]
-- Extra periodical/initial [new Excel sheet]
-- Market uncertainty (SplineRange) [old Excel sheet]
-- store Target amount on the Account (as well as other details: current Yearly Deposit, Years Left, etc.)
+* Target curve (red) [new Excel sheet]
+* Extra periodical/initial [new Excel sheet]
+* Market uncertainty (SplineRange) [old Excel sheet]
+* store Target amount on the Account (as well as other details: current Yearly Deposit, Years Left, etc.)
 - change field YearsLeft into TargetEndDate
 [
 - popup(s) with details: model composition (pie chart), numerical details (standard deviation etc.)
@@ -16,4 +16,8 @@ Financial Planner:
 * improve query performance for page "Client Portfolios"
 * add switch for page "Client Portfolios" - flags per Contact / per Account
 * find better icons for the color flags (red/yellow/green); e.g., Mac OS X Aqua-style lights (close/minimize/maximize window)
+- is there a deposit at the end of the last period? (maybe there should be a flag)
 - combining Extra periodical/initial - should allow amounts LARGER than either of the two
+- field Volatiliteit (StandardDeviation) (given data) - should always be visible (either Label or TextBox), just like Prognoserendement (InterestRatePerYear)
+- translate: "Market uncertainty", "History", "Volatility" ("Volatiliteit"?), Calculate/Recalculate (button), "Update account target", "Save", "Cancel"
+- double-click on an AccountNumber (page Client Portfolios) selects "EGVL012738 [Sunny (80% or over)]", instead of just the number
