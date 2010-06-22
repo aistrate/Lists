@@ -2,6 +2,10 @@ Financial Planner:
 
 
 Big:
+-!! change field YearsLeft into TargetEndDate
+
+- popup(s) with details: model composition (pie chart), numerical details (standard deviation etc.)
+
 * Main curve [old Excel sheet]
 * Chance of meeting target (traffic lights) [old Excel sheet]
 * History (Total Portfolio Value)
@@ -10,25 +14,27 @@ Big:
 * Market uncertainty (SplineRange) [old Excel sheet]
 * store Target amount on the Account (as well as other details: current Yearly Deposit, Years Left, etc.)
 
-- change field YearsLeft into TargetEndDate
-
-- popup(s) with details: model composition (pie chart), numerical details (standard deviation etc.)
-
 
 Small:
-* improve query performance for page "Client Portfolios"
-* add switch for page "Client Portfolios" - flags per Contact / per Account
-* find better icons for the color flags (red/yellow/green); e.g., Mac OS X Aqua-style lights (close/minimize/maximize window)
-@ is there a deposit at the end of the last period? (maybe there should be a flag)
-
-- round 'Chance of reaching target' to a whole number (no decimals); adjust the color flag accordingly (e.g., 49.7% should display as 50%, and show as yellow, not red); also change on page Client Portfolios
-
-- translate: "Market uncertainty", "History", "Volatility" ("Volatiliteit"?), Calculate/Recalculate (button), "Update target" (+ "Save target" and "Cancel"), "Please fill/correct fields with *"
+-! check/correct GoalSeek for 'Chance of meeting target' = 80%
 
 - field Volatiliteit (StandardDeviation) (given data) - should always be visible (either Label or TextBox), just like Prognoserendement (InterestRatePerYear)
 
+* improve query performance for page "Client Portfolios"
+* add switch for page "Client Portfolios" - flags per Contact / per Account
+* find better icons for the color flags (red/yellow/green); e.g., Mac OS X Aqua-style lights (close/minimize/maximize window)
+* is there a deposit at the end of the last period? (maybe there should be a flag)
+* round 'Chance of reaching target' to a whole number (no decimals); adjust the color flag accordingly (e.g., 49.7% should display as 50%, and show as yellow, not red); also change on page Client Portfolios
+* translate: "Market uncertainty", "History", "Volatility" ("Volatiliteit"?), Calculate/Recalculate (button), "Update target" (+ "Save target" and "Cancel"), "Please fill/correct fields with *"
 
-Little bugs:
-- double-click on an AccountNumber (page Client Portfolios) selects "EGVL012738 [Sunny (80% or over)]", instead of just the number
 
-- clicking on a slider without moving it causes the chart to "dissapear"
+Small bugs:
+* clicking on a slider without moving it causes the chart to "dissapear"
+
+* double-click on an AccountNumber (page Client Portfolios) selects "EGVL012738 [Sunny (80% or over)]", instead of just the number (when doing copy/paste)
+
+* Safari does not print the euro sign (on paper/preview) (Windows only)
+
+* pressing Tab while in TextBox "Doelvermogen" moves focus to Save/Cancel link buttons first, instead of TextBox underneath
+
+- TrafficLight image (and its border) doesn't look well when printed (margins are chopped off)

@@ -9,14 +9,23 @@ Version 2.0:
 Michel Klaster:
 
 Version 1.0:
+- correct the formula for EffectivePeriod, to include the NAVs of periodic deposits (column "C | npv" in the Excel sheet)
+
 - sliders should go beyond the 50%-chance value (the proposed deposits); the limit amounts should be double the proposed deposits (200%); always show the *proposed* deposit amounts (for reference)
 
-- calculate all formulas *per month* (instead of per year); monthly volatility etc. should be used; the *target end date* should be stored, not the number of years; the time span of the charts (and of all calculations) should be measured in *whole months*, not whole years
 
-- correct the formula for EffectivePeriod, to include the NAVs of periodic deposits (column "C | npv" in the Excel sheet)
+Small (v1.0):
+* Print button
+* Disclaimer text (only for Print version)
+
+
+Version 1.5:
+- calculate all formulas *per month* (instead of per year); monthly volatility etc. should be used; the *target end date* should be stored, not the number of years; the time span of the charts (and of all calculations) should be measured in *whole months*, not whole years
 
 
 Version 2.0:
 - show the history of plans; show at least the *original* plan (and maybe also move back-and-forth through successive plans)
 
 - allow more than one withdrawal, for example periodic withdrawals (after retiring); it should be possible to choose a different portfolio model when switching from periodic deposits to withdrawals; there should be two sets of data: two end-dates, two models, two periodic amounts (+/-), two target values (or is the second one always zero?) etc.
+
+

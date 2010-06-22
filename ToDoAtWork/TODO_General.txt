@@ -1,0 +1,1 @@
+- save the address of the client site in the database; this will be used in generated emails (e.g., "New password generated" [from the client site], and "New documents created" for notas and financial reports [from the main TotalGiro site])

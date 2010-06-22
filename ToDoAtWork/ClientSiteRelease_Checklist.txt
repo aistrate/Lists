@@ -1,0 +1,15 @@
+Checklist - when making a new release for the Client Site:
+
+1. Are database connection strings correct? (check for both aspnetdb in Web.config, and TotalGiro database in hibernate.cfg.xml; check usernames and passwords)
+
+2. Has anything changed in Web.config? (compare with latest version in source control)
+
+3. Are all necessary DLLs in the Bin folder? (AjaxControlToolkit.dll, DundasWebChart.dll)
+
+4. In IIS, is the type of Application Pool (for the website) "ASP.NET Application Pool"? (instead of "Default Application Pool")
+
+5. Are all necessary user roles present in aspnetdb? (check roles for: clients, remisier employees, asset manager/stichting employees)
+
+6. Are report server settings correct in Web.config? (used for PDFs, when generating new usernames)
+
+7. Have all SQL scripts been run successfully? (both definitions and data)
