@@ -2,8 +2,6 @@ Financial Planner:
 
 
 Big:
--!! change field YearsLeft into TargetEndDate
-
 - popup(s) with details: model composition (pie chart), numerical details (standard deviation etc.)
 
 * Main curve [old Excel sheet]
@@ -13,10 +11,17 @@ Big:
 * Extra periodical/initial [new Excel sheet]
 * Market uncertainty (SplineRange) [old Excel sheet]
 * store Target amount on the Account (as well as other details: current Yearly Deposit, Years Left, etc.)
+* change field YearsLeft into TargetEndDate
 
 
 Small:
--! check/correct GoalSeek for 'Chance of meeting target' = 80%
+-!! calculate Market Uncertainty with two times (2x) standard deviation (volatility) (request of Sandor and the brokers)
+
+-! on pressing "Calculate"/"Recalculate": FinancialDataView is saved in ViewState, and the database is NOT accessed anymore until the next time the button is pressed; specifically, there's no database access when changing the extra periodical/initial deposits
+
+-! recalculate as little as possible of the chart (let the rest come from ViewState of Dundas Chart control)
+
+- check/correct GoalSeek for 'Chance of meeting target' = 80%
 
 - field Volatiliteit (StandardDeviation) (given data) - should always be visible (either Label or TextBox), just like Prognoserendement (InterestRatePerYear)
 
@@ -37,4 +42,6 @@ Small bugs:
 
 * pressing Tab while in TextBox "Doelvermogen" moves focus to Save/Cancel link buttons first, instead of TextBox underneath
 
-- TrafficLight image (and its border) doesn't look well when printed (margins are chopped off)
+- TrafficLight image (and/or its border) don't look well when printed (margins are chopped off)
+
+- layout "collapses" after pressing link "Cancel" (for target update) in IE7; moreover, "display: inline-table" does not seem to work with IE7 (there is no space at all between labels Save and Cancel)
