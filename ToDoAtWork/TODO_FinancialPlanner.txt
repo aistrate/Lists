@@ -17,9 +17,11 @@ Big:
 Small:
 -!! calculate Market Uncertainty with two times (2x) standard deviation (volatility) (request of Sandor and the brokers)
 
--! on pressing "Calculate"/"Recalculate": FinancialDataView is saved in ViewState, and the database is NOT accessed anymore until the next time the button is pressed; specifically, there's no database access when changing the extra periodical/initial deposits
+* on pressing "Calculate"/"Recalculate": FinancialDataView is saved in ViewState, and the database is NOT accessed anymore until the next time the button is pressed; specifically, there's no database access when changing the extra periodical/initial deposits
 
 -! recalculate as little as possible of the chart (let the rest come from ViewState of Dundas Chart control)
+
+- replace Month and Year drop-down-lists with ComboBox extender control from AjaxControlToolkit
 
 - check/correct GoalSeek for 'Chance of meeting target' = 80%
 
@@ -44,4 +46,4 @@ Small bugs:
 
 - TrafficLight image (and/or its border) don't look well when printed (margins are chopped off)
 
-- layout "collapses" after pressing link "Cancel" (for target update) in IE7; moreover, "display: inline-table" does not seem to work with IE7 (there is no space at all between labels Save and Cancel)
+- layout "collapses" after pressing link "Cancel" (for target update) in IE7; moreover, "display: inline-table" does not seem to work with IE7 (there is no space at all between Save and Cancel)
