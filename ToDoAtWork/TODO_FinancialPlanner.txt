@@ -15,17 +15,22 @@ Big:
 
 
 Small:
--!! calculate Market Uncertainty with two times (2x) standard deviation (volatility) (request of Sandor and the brokers)
+-!! check that series "Volatility (2x)" produces correct values (esp. the up side)
 
-* on pressing "Calculate"/"Recalculate": FinancialDataView is saved in ViewState, and the database is NOT accessed anymore until the next time the button is pressed; specifically, there's no database access when changing the extra periodical/initial deposits
-
--! recalculate as little as possible of the chart (let the rest come from ViewState of Dundas Chart control)
+- check if moving the sliders causes any trip to the database
 
 - replace Month and Year drop-down-lists with ComboBox extender control from AjaxControlToolkit
 
+- enclose panel FutureValue in an UpdatePanel (for better performance etc.)
+
 - check/correct GoalSeek for 'Chance of meeting target' = 80%
 
-- field Volatiliteit (StandardDeviation) (given data) - should always be visible (either Label or TextBox), just like Prognoserendement (InterestRatePerYear)
+* calculate Market Uncertainty with two times (2x) standard deviation (volatility) (request of Sandor and the brokers)
+* on pressing "Calculate"/"Recalculate": FinancialDataView is saved in ViewState, and the database is NOT accessed anymore until the next time the button is pressed; specifically, there's no database access when changing the extra periodical/initial deposits
+* make panel "Extras" the same height for both views (i.e., with/without sliders), so that the Chart doesn't move up and down when switching
+* field Volatiliteit (StandardDeviation) (given data) - should always be visible (either Label or TextBox), just like Prognoserendement (InterestRatePerYear)
+* recalculate as little as possible of the chart (let the rest come from ViewState of Dundas Chart control)
+* have less "points" (gradations) on the sliders (or disable animation effect)
 
 * improve query performance for page "Client Portfolios"
 * add switch for page "Client Portfolios" - flags per Contact / per Account
