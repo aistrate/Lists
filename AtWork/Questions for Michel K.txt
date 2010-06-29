@@ -1,6 +1,6 @@
 Questions:
 
-- should ALL amounts on panel FutureValue be rounded to integers (like 'Chance of meeting target is)? This is because these figures are just approximations, so no great precision is necessary.
+- shouldn't ALL amounts on panel FutureValue be rounded to integers (like 'Chance of meeting target' is)? This is because they are just approximations, so no great precision is necessary.
 
 - color flags on page Client Portfolios: should tooltips show "Cloudy with a bit of sun (50% to 79%)", or the actual figure, e.g. "69%"? (with/without description?)
 
