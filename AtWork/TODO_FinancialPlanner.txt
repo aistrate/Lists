@@ -15,16 +15,21 @@ Big:
 
 
 Small:
--!! check that series "Volatility (2x)" produces correct values (esp. the up side)
+-!! check that series "Volatility (2x)" produces correct values (especially the max side)
 
-- check if moving the sliders causes any trip to the database
+-!! add new field to table RemisierEmployees (and new CheckBox column on page 'Remisier Logins') - HasSignedConfidentialityAgreement - which authorizes access to page 'Monitor Portefeuille'; also hide link to 'Monitor Portefeuille' on page 'Client Portfolios', if the field value is 'false'
+
+-! save the full url of the client website (e.g., "https://www.mijnpaerel.nl") somewhere in the database, so that links to the website within generated emails will work properly
 
 - replace Month and Year drop-down-lists with ComboBox extender control from AjaxControlToolkit
 
 - enclose panel FutureValue in an UpdatePanel (for better performance etc.)
 
+- use the Tabs control for the Extras (with/without sliders)
+
 - check/correct GoalSeek for 'Chance of meeting target' = 80%
 
+* check if moving the sliders causes any trip to the database
 * calculate Market Uncertainty with two times (2x) standard deviation (volatility) (request of Sandor and the brokers)
 * on pressing "Calculate"/"Recalculate": FinancialDataView is saved in ViewState, and the database is NOT accessed anymore until the next time the button is pressed; specifically, there's no database access when changing the extra periodical/initial deposits
 * make panel "Extras" the same height for both views (i.e., with/without sliders), so that the Chart doesn't move up and down when switching
@@ -41,14 +46,13 @@ Small:
 
 
 Small bugs:
-* clicking on a slider without moving it causes the chart to "dissapear"
-
-* double-click on an AccountNumber (page Client Portfolios) selects "EGVL012738 [Sunny (80% or over)]", instead of just the number (when doing copy/paste)
-
-* Safari does not print the euro sign (on paper/preview) (Windows only)
-
-* pressing Tab while in TextBox "Doelvermogen" moves focus to Save/Cancel link buttons first, instead of TextBox underneath
 
 - TrafficLight image (and/or its border) don't look well when printed (margins are chopped off)
 
 - layout "collapses" after pressing link "Cancel" (for target update) in IE7; moreover, "display: inline-table" does not seem to work with IE7 (there is no space at all between Save and Cancel)
+
+* page 'Client Portfolios': logging in as remisier employee 'M. Calame' of remisier 'Arthur en Arthur' causes exception 'Contact not authorized or not found' (because a specific client has only active accounts which are not "owned" by the current remisier, and the account that does belong to the current remisier is inactive, so method IsContactOwned returns 'false')
+* clicking on a slider without moving it causes the chart to "dissapear"
+* double-click on an AccountNumber (page Client Portfolios) selects "EGVL012738 [Sunny (80% or over)]", instead of just the number (when doing copy/paste)
+* Safari does not print the euro sign (on paper/preview) (Windows only)
+* pressing Tab while in TextBox "Doelvermogen" moves focus to Save/Cancel link buttons first, instead of TextBox underneath
