@@ -21,6 +21,14 @@ Small:
 
 -! save the full url of the client website (e.g., "https://www.mijnpaerel.nl") somewhere in the database, so that links to the website within generated emails will work properly
 
+- keep the current AccountId between contact-specific pages (PortfolioPositions / [Charts] / Notas / FinancialReports / FinancialPlanner)
+
+- page Charts - remember the selected Tab (and restore it when returning from another page, e.g., PortfolioPositions or FinancialPlanner)
+
+- improve performance of page Charts by enabling ViewState for Dundas Chart controls; charts should be re-DataBound only when something has changed (e.g., the selected account), not every time a Tab is selected.
+
+- verify all the pages that use SessionState to communicate with each other (e.g., AccountId); make sure that a user can work with more than one contact/account at a time, in the same ASP.NET session, in different browser tabs/windows (Firefox only has one session; IE8 also, by default), without the "workflows" getting mixed up
+
 - replace Month and Year drop-down-lists with ComboBox extender control from AjaxControlToolkit
 
 - enclose panel FutureValue in an UpdatePanel (for better performance etc.)
@@ -47,10 +55,13 @@ Small:
 
 Small bugs:
 
+- page PositionTxsCash.aspx generates an error ("Invalid column name 'IsSystem'.")
+
 - TrafficLight image (and/or its border) don't look well when printed (margins are chopped off)
 
 - layout "collapses" after pressing link "Cancel" (for target update) in IE7; moreover, "display: inline-table" does not seem to work with IE7 (there is no space at all between Save and Cancel)
 
+* page 'Client Portfolios' crashes when an account doesn't have a model (e.g., account 'EGBH30030')
 * page 'Client Portfolios': logging in as remisier employee 'M. Calame' of remisier 'Arthur en Arthur' causes exception 'Contact not authorized or not found' (because a specific client has only active accounts which are not "owned" by the current remisier, and the account that does belong to the current remisier is inactive, so method IsContactOwned returns 'false')
 * clicking on a slider without moving it causes the chart to "dissapear"
 * double-click on an AccountNumber (page Client Portfolios) selects "EGVL012738 [Sunny (80% or over)]", instead of just the number (when doing copy/paste)
