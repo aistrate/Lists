@@ -1,0 +1,39 @@
+Things I want to program:
+
+- a compiler (or more, one for each programming paradigm: C, C#, Forth, Prolog, Lisp/Scheme, Haskell, Smalltalk)
+
+- a 3D graphics program (ray tracing, shading, anti-aliasing, animation, etc.)
+
+- a strong solver for a board game (Reversi, chess, etc.)
+
+- a web browser engine (layout engine/rendering engine) that supports HTML, CSS, JavaScript and DOM; the JavaScript interpreter could be a semi-independent project (test: render Amazon.com pages)
+
+- LINQ to NHibernate
+
+- a mini-operating system (in C)
+
+- a text editor, with syntax-highlighting (in Haskell and/or C)
+
+- a regular expression parser (as a C# library)
+
+- an interpreter for a purely dynamic language (a scripting language such as Python or Ruby)
+
+- a constraint progamming engine (as a C# library, called a 'constraint solving toolkit')
+
+
+
+Less likely:
+
+- a simple video game (with real-time 3D graphics)
+
+- a robot or physical device (that does something useful)
+
+- a 2D graphics editing program (like Photoshop or Gimp)
+
+- a font renderer (vector fonts, Bezier curves etc.)
+
+- a web server (test: host an ASP.NET website, such as the TG client site); it should support HTTPS
+
+- a full network stack (HTTP, TCP/IP)
+
+- a basic symbolic computation system (symbolic integration and differentiation etc.)
