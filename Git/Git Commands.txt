@@ -33,7 +33,7 @@ Tricks:
 
     This will restore the file from the index (staging area), or if it's not there, from the database (the last commit).
 
-- when interacting with GitHub, if running git causes a crash (with "Do you want to start debugging?" message), try one of these:
-    - run commands 'ls' and/or 'pwd' in the repository folder (not '.git' folder);
+- when interacting with GitHub, if running git causes a crash (with a "Do you want to start debugging?" message), try one of the following:
+    - run commands 'ls' and/or 'pwd' in the repository folder (not the '.git' folder);
     - run 'cd ..', then come back with 'cd <folder>';
     - to test if git will work, run 'ssh git@github.com', or 'ssh -v git@github.com' (verbose)
