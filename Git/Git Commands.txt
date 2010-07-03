@@ -9,12 +9,15 @@ Frequently-used Git commands:
 > git pull origin
 > git pull origin master
 
+> git <cmd> --help
 > git diff
 > git log --max-count=3
 
 > git clone git@github.com:aistrate/Lists.git
 
 > git merge -m 'message' origin/master
+
+> git checkout <file>
 
 
 
@@ -23,6 +26,12 @@ Tricks:
 - when making local changes BEFORE pulling the latest version, which was pushed from another machine:
 
     > git merge -m 'message' origin/master
+
+- to undo changes to a file ("Undo pending changes..." in VS):
+
+    > git checkout <file>
+
+    This will restore the file from the index (staging area), or if it's not there, from the database (the last commit).
 
 - when interacting with GitHub, if running git causes a crash (with "Do you want to start debugging?" message), try one of these:
     - run commands 'ls' and/or 'pwd' in the repository folder (not '.git' folder);
