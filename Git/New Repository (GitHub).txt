@@ -1,0 +1,19 @@
+Global setup:
+ Download and install Git
+  git config --global user.name "Adrian Istrate"
+  git config --global user.email adr_istrate@yahoo.com
+        
+Next steps:
+  mkdir xxxxxx
+  cd xxxxxx
+  git init
+  touch README
+  git add README
+  git commit -m 'first commit'
+  git remote add origin git@github.com:aistrate/xxxxxx.git
+  git push origin master
+      
+Existing Git Repo?
+  cd existing_git_repo
+  git remote add origin git@github.com:aistrate/xxxxxx.git
+  git push origin master

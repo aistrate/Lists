@@ -1,0 +1,30 @@
+Frequently-used Git commands:
+
+> git status
+> git add .
+> git rm <file>
+> git commit -m 'message'
+> git push origin
+> git push origin master
+> git pull origin
+> git pull origin master
+
+> git diff
+> git log --max-count=3
+
+> git clone git@github.com:aistrate/Lists.git
+
+> git merge -m 'message' origin/master
+
+
+
+Tricks:
+
+- when making local changes BEFORE pulling the latest version, which was pushed from another machine:
+
+    > git merge -m 'message' origin/master
+
+- when interacting with GitHub, if running git causes a crash (with "Do you want to start debugging?" message), try one of these:
+    - run commands 'ls' and/or 'pwd' in the repository folder (not '.git' folder);
+    - run 'cd ..', then come back with 'cd <folder>';
+    - to test if git will work, run 'ssh git@github.com', or 'ssh -v git@github.com' (verbose)

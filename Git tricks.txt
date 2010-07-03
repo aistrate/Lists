@@ -1,4 +1,0 @@
-- when making local changes before pulling the latest version, which was changed from another machine:
-    > git merge -m <msg> origin/master
-
-- when interacting with GitHub causes a crash (a "Do you want to start debugging?" message): run commands 'ls' and/or 'pwd' in the folder where git will run; if still crashing, try 'cd ..', then come back with 'cd <folder>'; to test whether git will work, try 'ssh git@github.com', or 'ssh -v git@github.com' (verbose)
