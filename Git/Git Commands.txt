@@ -1,7 +1,7 @@
 Frequently-used Git commands:
 
 > git status
-> git status -s     # short
+> git status -s                   # just name and status
 > git add .
 > git rm <file>
 > git commit -m 'message'
@@ -16,6 +16,7 @@ Frequently-used Git commands:
 > git diff                    # unstaged changes
 > git diff --cached           # staged changes
 > git diff HEAD               # both unstaged and staged changes
+> git diff HEAD^ HEAD         # compare last two commits
 > git diff --stat             # summary (only changed-line counts)
 > git diff --stat --cached
 
