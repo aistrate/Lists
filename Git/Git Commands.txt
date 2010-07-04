@@ -1,18 +1,38 @@
 Frequently-used Git commands:
 
 > git status
+> git status -s     # short
 > git add .
 > git rm <file>
 > git commit -m 'message'
-> git commit -a -m 'message'
+> git commit -a -m 'message'      # add (modified only) and rm
 > git push origin
 > git push origin master
 > git pull origin
 > git pull origin master
 
-> git diff
-> git log --max-count=3
 > git <cmd> --help
+
+> git diff                    # unstaged changes
+> git diff --cached           # staged changes
+> git diff HEAD               # both unstaged and staged changes
+> git diff --stat             # summary (only changed-line counts)
+> git diff --stat --cached
+
+> git log --max-count=3
+> git log --oneline
+> git log --format=oneline --abbrev-commit    # same as the above
+> git log --pretty=oneline --abbrev-commit    # same
+
+> git show --name-status               # list of files in the last commit
+> git show --name-status HEAD          # also works with HEAD^, HEAD^^, etc.
+> git show --name-status b3b87ff       # find checksums with: 'git log --oneline'
+> git show --pretty="format:" --name-status   # don't show the commit header
+> git diff --name-status HEAD^ HEAD           # (almost) same result as the above
+> git diff-tree --name-status -r HEAD         # same result as the above
+                                              # -r means recursive
+> git ls-tree --name-only -r HEAD             # list ALL files in the snapshot
+                                              # file status is not available
 
 > git config --list
 > git config --global --list
@@ -29,11 +49,13 @@ Frequently-used Git commands:
   (then in vim:   :wq)
 
 
+
 Tricks:
 
-- when making local changes BEFORE pulling the latest version, which was pushed from another machine:
+- to commit all changes, including modified, new and deleted (or renamed/moved) files:
 
-    > git merge -m 'message' origin/master
+    > git add .                      # (stage) new and modified
+    > git commit -a -m 'message'     # (commit) staged, modified and deleted
 
 - to undo changes to a file ("Undo pending changes..." in VS):
 
@@ -41,7 +63,17 @@ Tricks:
 
     This will restore the file from the index (staging area), or if it's not there, from the database (the last commit).
 
-- when interacting with GitHub, if running git causes a crash (with a "Do you want to start debugging?" message), try one of the following:
+- when making local changes BEFORE pulling the latest version, which was pushed from another machine:
+
+    > git merge -m 'message' origin/master
+
+- when interacting with GitHub, if running Git causes a crash (with a "Do you want to start debugging?" message), try one of the following:
     - run commands 'ls' and/or 'pwd' in the repository folder (not the '.git' folder);
     - run 'cd ..', then come back with 'cd <folder>';
     - to test if git will work, run 'ssh git@github.com', or 'ssh -v git@github.com' (verbose)
+
+- to unstage a file ('--' separates options from file paths):
+
+    > git reset HEAD -- <file>
+
+- to undo a commit: use 'git reset' (?)
