@@ -4,14 +4,20 @@ Frequently-used Git commands:
 > git add .
 > git rm <file>
 > git commit -m 'message'
+> git commit -a -m 'message'
 > git push origin
 > git push origin master
 > git pull origin
 > git pull origin master
 
-> git <cmd> --help
 > git diff
 > git log --max-count=3
+> git <cmd> --help
+
+> git config --list
+> git config --global --list
+> git config --global user.name "Adrian Istrate"
+> git config --global user.email "adrian.istrate@yahoo.com"
 
 > git clone git@github.com:aistrate/Lists.git
 
@@ -19,6 +25,8 @@ Frequently-used Git commands:
 
 > git checkout <file>
 
+> git commit --amend --author='Adrian Istrate <adrian.istrate@yahoo.com>'
+  (then in vim:   :wq)
 
 
 Tricks:
