@@ -57,13 +57,13 @@ Tricks:
     > git add .                      # (stage) new and modified
     > git commit -a -m 'message'     # (commit) staged, modified and deleted
 
-- to undo changes to a file ("Undo pending changes..." in VS):
+- to undo changes to an unstaged file ("Undo pending changes..." in VS):
 
     > git checkout <file>
 
     This will restore the file from the index (staging area), or if it's not there, from the database (the last commit).
 
-- when making local changes BEFORE pulling the latest version, which was pushed from another machine:
+- after making local changes BEFORE pulling the latest version, which was pushed from another machine:
 
     > git merge -m 'message' origin/master
 
@@ -77,3 +77,9 @@ Tricks:
     > git reset HEAD -- <file>
 
 - to undo a commit: use 'git reset' (?)
+
+- to define a Git alias (shortcut), for example 'git unstage' for 'git reset HEAD':
+
+    > git config --global alias.unstage "reset HEAD"
+
+    All arguments after the alias will be passed on, so running 'git unstage <file>' will work like 'git reset HEAD <file>'.
