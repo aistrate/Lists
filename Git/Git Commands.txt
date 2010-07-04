@@ -44,6 +44,7 @@ Frequently-used Git commands:
 > git merge -m 'message' origin/master
 
 > git checkout <file>
+> git checkout -- .
 
 > git commit --amend --author='Adrian Istrate <adrian.istrate@yahoo.com>'
   (then in vim:   :wq)
@@ -51,6 +52,8 @@ Frequently-used Git commands:
 
 
 Tricks:
+
+- the string '--' within a command separates the options from the file paths
 
 - to commit all changes, including modified, new and deleted (or renamed/moved) files:
 
@@ -72,7 +75,7 @@ Tricks:
     - run 'cd ..', then come back with 'cd <folder>';
     - to test if git will work, run 'ssh git@github.com', or 'ssh -v git@github.com' (verbose)
 
-- to unstage a file ('--' separates options from file paths):
+- to unstage a file:
 
     > git reset HEAD -- <file>
 
