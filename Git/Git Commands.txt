@@ -87,3 +87,8 @@ Tricks:
     > git config --global alias.unstage "reset HEAD"
 
     All arguments after the alias will be passed on, so running 'git unstage <file>' will work like 'git reset HEAD <file>'.
+
+- to enable pulling/pushing by a simple 'git pull' or 'git push' (not necessarily followed by 'origin master'):
+
+    $ git config --global branch.master.remote origin
+    $ git config --global branch.master.merge refs/heads/master
