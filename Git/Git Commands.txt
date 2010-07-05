@@ -17,6 +17,7 @@ Frequently-used Git commands:
 > git diff --cached           # staged changes
 > git diff HEAD               # both unstaged and staged changes
 > git diff HEAD^ HEAD         # compare last two commits
+> git diff HEAD^              # compare (unstaged, staged and commited) with commit before last
 > git diff --stat             # summary (only changed-line counts)
 > git diff --stat --cached
 
