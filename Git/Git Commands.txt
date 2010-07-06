@@ -94,6 +94,6 @@ Tricks:
     $ git config --global branch.master.remote origin
     $ git config --global branch.master.merge refs/heads/master
 
-- if a passphrase (password) is asked for every time ssh is talking to GitHub: use ssh-agent to save the passphrase securely, so that it doesn't have to be re-entered. Use the .bashrc script found in this directory (put it in the Home folder). The ssh-agent.exe service will remember the passphrase for the duration of the current Windows session. (This is only necessary on Windows, because on Mac, Keychain will remember the passphrase permanently.) (See also: http://help.github.com/working-with-key-passphrases/)
+- if a passphrase (password) is asked for every time ssh is talking to GitHub: use ssh-agent to store the passphrase securely. This can be done with a bash script, to be put in .bashrc or .profile (see http://help.github.com/working-with-key-passphrases/). The ssh-agent.exe service will remember the passphrase for the duration of the Windows session. (On Mac OS X, Keychain will store it permanently.)
 
 - the Home folder, where various configuration files are looked for by Git and MSYS (.gitconfig, .profile, .bashrc, etc.): "U:\" at work, "C:\Documents and Settings\Adrian" at home, and "~" on the Mac
