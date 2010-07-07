@@ -40,9 +40,9 @@ Public Module RecordingModule
 
             Dim trans As EnvDTE80.Transport = dbg2.Transports.Item("Default")
 
-            Dim dbgeng(1) As EnvDTE80.Engine
+            'Dim dbgeng(1) As EnvDTE80.Engine
 
-            dbgeng(0) = trans.Engines.Item("Native")
+            'dbgeng(0) = trans.Engines.Item("Native")
 
             Dim proc2 As EnvDTE80.Process2 = dbg2.GetProcesses(trans, "WS018").Item("WebDev.WebServer.EXE")
 
