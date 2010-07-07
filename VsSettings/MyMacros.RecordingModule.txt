@@ -1,0 +1,62 @@
+Option Strict Off
+Option Explicit Off
+Imports System
+Imports EnvDTE
+Imports EnvDTE80
+Imports EnvDTE90
+Imports System.Diagnostics
+
+Public Module RecordingModule
+
+    Sub BuildClientApplicationLayer()
+        Dim solutionExplorerVisible As Boolean
+        solutionExplorerVisible = DTE.Windows.Item(Constants.vsWindowKindSolutionExplorer).Visible
+
+        DTE.Windows.Item(Constants.vsWindowKindSolutionExplorer).Activate()
+
+        Try
+            DTE.ActiveWindow.Object.GetItem("TotalGiro\ApplicationLayer").Select(vsUISelectionType.vsUISelectionTypeSelect)
+        Catch ex As Exception
+        End Try
+
+        Try
+            DTE.ActiveWindow.Object.GetItem("TotalGiroClient\ClientApplicationLayer").Select(vsUISelectionType.vsUISelectionTypeSelect)
+        Catch ex As Exception
+        End Try
+
+        DTE.ExecuteCommand("ClassViewContextMenus.ClassViewProject.Build")
+
+        DTE.Windows.Item(Constants.vsWindowKindSolutionExplorer).Visible = solutionExplorerVisible
+    End Sub
+
+    Sub SwitchSolutionExplorer()
+        DTE.Windows.Item(Constants.vsWindowKindSolutionExplorer).Visible = Not DTE.Windows.Item(Constants.vsWindowKindSolutionExplorer).Visible
+    End Sub
+
+    Sub AttachToWebServerProcess()
+        Try
+
+            Dim dbg2 As EnvDTE80.Debugger2 = DTE.Debugger
+
+            Dim trans As EnvDTE80.Transport = dbg2.Transports.Item("Default")
+
+            Dim dbgeng(1) As EnvDTE80.Engine
+
+            dbgeng(0) = trans.Engines.Item("Native")
+
+            Dim proc2 As EnvDTE80.Process2 = dbg2.GetProcesses(trans, "WS018").Item("WebDev.WebServer.EXE")
+
+            proc2.Attach2(dbgeng)
+
+        Catch ex As System.Exception
+
+            MsgBox(ex.Message)
+
+        End Try
+    End Sub
+
+    Sub CancelBuild()
+        DTE.ExecuteCommand("Build.Cancel")
+    End Sub
+
+End Module

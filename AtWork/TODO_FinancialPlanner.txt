@@ -17,8 +17,6 @@ Big:
 Small:
 -!! check that series "Volatility (2x)" produces correct values (especially the max side)
 
--!! add new field to table RemisierEmployees (and new CheckBox column on page 'Remisier Logins') - HasSignedConfidentialityAgreement - which authorizes access to page 'Monitor Portefeuille'; also hide link to 'Monitor Portefeuille' on page 'Client Portfolios', if the field value is 'false'
-
 -! save the full url of the client website (e.g., "https://www.mijnpaerel.nl") somewhere in the database, so that links to the website within generated emails will work properly
 
 - keep the current AccountId between contact-specific pages (PortfolioPositions / [Charts] / Notas / FinancialReports / FinancialPlanner)
@@ -36,6 +34,8 @@ Small:
 - use the Tabs control for the Extras (with/without sliders)
 
 - check/correct GoalSeek for 'Chance of meeting target' = 80%
+
+* add new field to table RemisierEmployees (and new CheckBox column on page 'Remisier Logins') - HasSignedConfidentialityAgreement - which authorizes access to page 'Monitor Portefeuille'; also hide link to 'Monitor Portefeuille' on page 'Client Portfolios', if the field value is 'false'
 
 * check if moving the sliders causes any trip to the database
 * calculate Market Uncertainty with two times (2x) standard deviation (volatility) (request of Sandor and the brokers)

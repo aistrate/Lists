@@ -1,0 +1,44 @@
+Imports System
+Imports EnvDTE
+Imports System.Diagnostics
+
+Public Module Collapse
+    Sub CollapseAll()
+        ' Get the the Solution Explorer tree
+        Dim UIHSolutionExplorer As UIHierarchy
+        UIHSolutionExplorer = DTE.Windows.Item(Constants.vsext_wk_SProjectWindow).Object()
+        ' Check if there is any open solution
+        If (UIHSolutionExplorer.UIHierarchyItems.Count = 0) Then
+            ' MsgBox("Nothing to collapse. You must have an open solution.")
+            Return
+        End If
+        ' Get the top node (the name of the solution)
+        Dim UIHSolutionRootNode As UIHierarchyItem
+        UIHSolutionRootNode = UIHSolutionExplorer.UIHierarchyItems.Item(1)
+        UIHSolutionRootNode.DTE.SuppressUI = True
+        ' Collapse each project node
+        Dim UIHItem As UIHierarchyItem
+        For Each UIHItem In UIHSolutionRootNode.UIHierarchyItems
+            'UIHItem.UIHierarchyItems.Expanded = False
+            If UIHItem.UIHierarchyItems.Expanded Then
+                Collapse(UIHItem)
+            End If
+        Next
+        ' Select the solution node, or else when you click 
+        ' on the solution window
+        ' scrollbar, it will synchronize the open document 
+        ' with the tree and pop
+        ' out the corresponding node which is probably not what you want.
+        UIHSolutionRootNode.Select(vsUISelectionType.vsUISelectionTypeSelect)
+        UIHSolutionRootNode.DTE.SuppressUI = False
+    End Sub
+
+    Private Sub Collapse(ByVal item As UIHierarchyItem)
+        For Each eitem As UIHierarchyItem In item.UIHierarchyItems
+            If eitem.UIHierarchyItems.Expanded AndAlso eitem.UIHierarchyItems.Count > 0 Then
+                Collapse(eitem)
+            End If
+        Next
+        item.UIHierarchyItems.Expanded = False
+    End Sub
+End Module
