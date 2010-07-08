@@ -9,7 +9,7 @@ Version 2.0:
 Michel Klaster:
 
 Version 1.0:
--! correct the formula for EffectivePeriod, to include the NAVs of periodic deposits (column "C | npv" in the Excel sheet)
+-! correct the formula for EffectivePeriod, to include the net present value (NPV) of the periodic deposits (column "C | npv" on the Excel sheet)
 
 -! sliders should go beyond the 50%-chance value (the proposed deposits); the limit amounts should be double the proposed deposits (200%); always show the *proposed* deposit amounts (for reference)
 

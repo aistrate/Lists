@@ -19,6 +19,8 @@ Small:
 
 -! save the full url of the client website (e.g., "https://www.mijnpaerel.nl") somewhere in the database, so that links to the website within generated emails will work properly
 
+-! write a SQL script that adds PreProd usernames to the database, so that it will still work even after being restored from the Production db
+
 - keep the current AccountId between contact-specific pages (PortfolioPositions / [Charts] / Notas / FinancialReports / FinancialPlanner)
 
 - page Charts - remember the selected Tab (and restore it when returning from another page, e.g., PortfolioPositions or FinancialPlanner)

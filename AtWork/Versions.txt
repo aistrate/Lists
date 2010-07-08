@@ -1,0 +1,33 @@
+Version 1.0 - already in:
+
+- Replace field YearsLeft (integer) with TargetEndDate (month/year).
+
+- Round value of ChanceOfMeetingTarget to a whole number (no decimals).
+
+- Make ProposedPeriodical and ProposedInitial amounts aim for goal of ChanceOfMeetingTarget == 80%, instead of goal of FutureValueAfterAdjust == TargetValue.
+
+- Put a Print button on the 'Monitor Portefeuille' page. Show a Disclaimer only on the print version (but not on the screen version).
+
+- Translate everything on the page.
+
+- Show a Volatility range of TWO times (2x) the standard deviation (95% chance), on the chart. (We also show the old range of 1x the standard deviation (68% chance), superimposed over the 2x.) IMPORTANT: The calculation for 2x still needs to be verified by Michel Klaster.
+
+
+Version 1.0 - still to be done:
+
+- Change the formula for EffectivePeriod, to include the net present value (NPV) of the periodic deposits (this is almost finished).
+
+- Save the full URL of the client website (e.g., "https://www.mijnpaerel.nl") to the database, so that links to the website within generated emails will always work properly. This is necessary before we make the website HTTPS-enabled (request of Eric Kluft).
+
+
+Version 1.0 or 1.5 (yet to be decided):
+
+- Make the ExtraPeriodical and ExtraInitial fields freely-changeable by the user, independently of the sliders. (For now, each of the two TextBoxes is coupled to a Slider control, which means that its maximum value is the slider's maximum value.)
+
+
+Version 1.5:
+
+- All calculations should be based on a whole number of MONTHS, instead of a whole number of years.
+
+
+Also bear in mind that besides the issues above, there are also a few bugs that I still need to solve.
