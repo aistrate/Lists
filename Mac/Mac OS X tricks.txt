@@ -1,0 +1,11 @@
+1. To make a symbolic (soft) link to a file having path name <file-path>:
+        ln -s <file-path> <link-name>
+   
+   In the 'man ln' page, the old (existing) <file-path> is called source_file, and the newly created link, target_file.
+
+2. To add a directory to the PATH environment variable, add this to file ~/.profile:
+        export PATH=<path>:$PATH
+   
+   If the path is still not seen by Emacs, add this to file ~/.emacs:
+       (setenv "PATH" (concat (getenv "PATH") ":<path>"))
+       (setq exec-path (append exec-path '("<path>")))
