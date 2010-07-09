@@ -130,8 +130,9 @@ $^y::SendCommand("^y","+{Insert}") ;paste
 ;LWin::return
 ;RWin::return
 
-LWin::BlockInput On
-LWin Up::BlockInput Off
 
-RWin::BlockInput On
-RWin Up::BlockInput Off
+;LWin::BlockInput On
+;LWin Up::BlockInput Off
+
+;RWin::BlockInput On
+;RWin Up::BlockInput Off
