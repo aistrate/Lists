@@ -1,0 +1,4 @@
+- change Web Site into a project (instead of just a folder)
+(make the project type Web Application, instead of Web Site)
+
+- use Branches (TFS), e.g., ADRIAN-DEV
