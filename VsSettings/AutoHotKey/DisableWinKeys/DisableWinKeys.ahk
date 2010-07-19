@@ -9,3 +9,6 @@ LWin Up::BlockInput Off
 
 RWin::BlockInput On
 RWin Up::BlockInput Off
+
+AppsKey::BlockInput On
+AppsKey Up::BlockInput Off
