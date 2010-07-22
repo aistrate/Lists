@@ -21,6 +21,7 @@ Small:
 
 -! write a SQL script that adds PreProd usernames to the database, so that it will still work even after being restored from the Production db
 
+
 - keep the current AccountId between contact-specific pages (PortfolioPositions / [Charts] / Notas / FinancialReports / FinancialPlanner)
 
 - page Charts - remember the selected Tab (and restore it when returning from another page, e.g., PortfolioPositions or FinancialPlanner)
@@ -28,6 +29,7 @@ Small:
 - improve performance of page Charts by enabling ViewState for Dundas Chart controls; charts should be re-DataBound only when something has changed (e.g., the selected account), not every time a Tab is selected.
 
 - verify all the pages that use SessionState to communicate with each other (e.g., AccountId); make sure that a user can work with more than one contact/account at a time, in the same ASP.NET session, in different browser tabs/windows (Firefox only has one session; IE8 also, by default), without the "workflows" getting mixed up
+
 
 - replace Month and Year drop-down-lists with ComboBox extender control from AjaxControlToolkit
 
