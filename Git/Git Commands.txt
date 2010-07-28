@@ -21,6 +21,7 @@ $ git diff HEAD^              # compare (unstaged, staged and commited) with com
 $ git diff --stat             # summary (only changed-line counts)
 $ git diff --stat --cached
 
+$ git log -3
 $ git log --max-count=3
 $ git log --oneline
 $ git log --format=oneline --abbrev-commit    # same as the above
@@ -40,6 +41,7 @@ $ git config --list
 $ git config --global --list
 $ git config --global user.name "Adrian Istrate"
 $ git config --global user.email "adrian.istrate@yahoo.com"
+$ git config --global --unset xxx
 
 $ git clone git@github.com:aistrate/Lists.git
 
