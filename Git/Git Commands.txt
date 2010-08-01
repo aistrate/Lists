@@ -6,6 +6,7 @@ $ git add .
 $ git rm <file>
 $ git commit -m 'message'
 $ git commit -a -m 'message'      # add (modified only) and rm
+$ git commit -am 'message'
 $ git push origin
 $ git push origin master
 $ git pull origin
@@ -23,6 +24,7 @@ $ git diff --stat --cached
 
 $ git log -3
 $ git log --max-count=3
+$ git log --oneline --graph
 $ git log --oneline
 $ git log --format=oneline --abbrev-commit    # same as the above
 $ git log --pretty=oneline --abbrev-commit    # same
@@ -52,6 +54,31 @@ $ git checkout -- .
 
 $ git commit --amend --author='Adrian Istrate <adrian.istrate@yahoo.com>'
   (then in vim:   :wq)
+
+
+
+Branching:
+
+$ git branch                 # list all branches
+
+$ git checkout -b <name>     # create and immediately switch to a branch
+
+$ git branch <name>          # create new branch
+$ git checkout <name>        # switch to branch
+
+$ git branch -d <name>       # delete a branch
+
+$ git log --oneline --graph  # show the branching graph
+
+$ git log --oneline <name> ^master   # show only commits that are in the <name> 
+                                     # branch, but not in the master branch;
+$ git log --oneline master ^<name>   # in master, but not in <name>
+
+$ git log --oneline --decorate --graph -10       # show ref names and tags
+$ git log --oneline --decorate=full --graph -10
+
+$ git tag -a v1.0                    # tag the last commit
+$ git tag -a v0.9 <checksum>         # tag an older commit
 
 
 
@@ -99,3 +126,7 @@ Tricks:
 - if a passphrase (password) is asked for every time ssh is talking to GitHub: use ssh-agent to store the passphrase securely. This can be done with a bash script, to be put in .bashrc or .profile (see http://help.github.com/working-with-key-passphrases/). The ssh-agent.exe service will remember the passphrase for the duration of the Windows session. (On Mac OS X, Keychain will store it permanently.)
 
 - the Home folder, where various configuration files are looked for by Git and MSYS (.gitconfig, .profile, .bashrc, etc.): "U:\" at work, "C:\Documents and Settings\Adrian" at home, and "~" on the Mac
+
+- to turn on coloring for terminal output:
+
+    $ git config --global color.ui true
