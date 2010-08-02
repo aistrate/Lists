@@ -1,1 +1,13 @@
 - save the address of the client site in the database; this will be used in generated emails (e.g., "New password generated" [from the client site], and "New documents created" for notas and financial reports [from the main TotalGiro site])
+
+
+Page Remisier Logins:
+
+-! what role(s) should the new (remisier employee) logins belong to?
+
+- eliminate class SecurityLayerAdapter (use SecurityFilter directly)
+
+* column Employee should start with De Heer/Mevrouw
+* move FullName from Contact to ContactFormatter (?); FullName should also be a property of LoginPerson
+* change 'New login name' letter (report) and 'New password' email (two variants each: one for clients, and one for remisier employees)
+* Remisier Logins page: filtering (security-filtering for everything)
