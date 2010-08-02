@@ -37,3 +37,9 @@ Less likely:
 - a full network stack (HTTP, TCP/IP)
 
 - a basic symbolic computation system (symbolic integration and differentiation etc.)
+
+
+
+Actually useful (for myself):
+
+- a simple program for touch-typing practice (like Mavis Beacon, but NOT needing a graphics card): echo the typed text under the original (or superimposed over it, in a different color), beep when mistyping, report statistics such as WPM and error percentage (and time elapsed), import from file, keep history (file names and statistics) in a text file

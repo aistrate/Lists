@@ -1,0 +1,4 @@
+- how to truncate a date to only the date part, in SQL:
+
+    select [DateTime], convert(datetime, left([DateTime], 11)) as NewDateTime 
+    from dbo.Trades (Nolock)
