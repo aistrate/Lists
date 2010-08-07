@@ -28,6 +28,9 @@ $ git log --oneline --graph
 $ git log --oneline
 $ git log --format=oneline --abbrev-commit    # same as the above
 $ git log --pretty=oneline --abbrev-commit    # same
+$ git shortlog
+$ git log --format=format:%s                  # same
+$ git showtlog -w                             # wrap long lines
 
 $ git show --name-status               # list of files in the last commit
 $ git show --name-status HEAD          # also works with HEAD^, HEAD^^, etc.
