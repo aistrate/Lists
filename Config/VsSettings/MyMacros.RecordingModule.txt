@@ -24,6 +24,11 @@ Public Module RecordingModule
         Catch ex As Exception
         End Try
 
+        Try
+            DTE.ActiveWindow.Object.GetItem("TotalGiroClient\TotalGiroClient").Select(vsUISelectionType.vsUISelectionTypeSelect)
+        Catch ex As Exception
+        End Try
+
         DTE.ExecuteCommand("ClassViewContextMenus.ClassViewProject.Build")
 
         DTE.Windows.Item(Constants.vsWindowKindSolutionExplorer).Visible = solutionExplorerVisible
