@@ -113,7 +113,15 @@ Tricks:
 
     $ git reset HEAD -- <file>
 
-- to undo a commit: use 'git reset' (?)
+- to undo the last commit (before pushing to a remote):
+
+    $ git reset --soft HEAD^
+	(Does not touch the index file nor the working tree at all, but requires them to be in a good order. This leaves all your changed files "Changes to be committed", as git status would put it.)
+
+    $ git reset --hard HEAD^
+    (Matches the working tree and index to that of the tree being switched to. Any changes to tracked files in the working tree since <commit> are lost.)
+
+    Beware that if the commit was already pushed to a remote, the next push will be rejected, unless a manual merge is done first.
 
 - to define a Git alias (shortcut), for example 'git unstage' for 'git reset HEAD':
 

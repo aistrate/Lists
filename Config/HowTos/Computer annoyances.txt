@@ -1,1 +1,4 @@
 - how to find the Insert key on Apple keyboards: it is the 0 (zero) key on the NumPad
+
+- how to remove a program from the "Open With" list in Windows Explorer: go to this Registry key:
+    HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.<extension>\OpenWithList

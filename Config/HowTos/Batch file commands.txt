@@ -1,0 +1,15 @@
+Batch file commands:
+
+- comments:
+    > rem
+    or
+    > ::
+
+- newline (dot immediately after echo):
+    > echo.
+
+- wait for key:
+    > pause
+
+- display "Press any key to continue . . ." and wait:
+    > pause
