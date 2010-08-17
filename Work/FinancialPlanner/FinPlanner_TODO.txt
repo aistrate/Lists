@@ -1,25 +1,10 @@
-Financial Planner:
-
-
-Big:
-- popup(s) with details: model composition (pie chart), numerical details (standard deviation etc.)
-
-* Main curve [old Excel sheet]
-* Chance of meeting target (traffic lights) [old Excel sheet]
-* History (Total Portfolio Value)
-* Target curve (red) [new Excel sheet]
-* Extra periodical/initial [new Excel sheet]
-* Market uncertainty (SplineRange) [old Excel sheet]
-* store Target amount on the Account (as well as other details: current Yearly Deposit, Years Left, etc.)
-* change field YearsLeft into TargetEndDate
-
-
 Small:
--!! check that series "Volatility (2x)" produces correct values (especially the max side)
 
--! save the full url of the client website (e.g., "https://www.mijnpaerel.nl") somewhere in the database, so that links to the website within generated emails will work properly
+-! check/correct GoalSeek for 'Chance of meeting target' = 80%
 
--! write a SQL script that adds PreProd usernames to the database, so that it will still work even after being restored from the Production db
+-! check that series "Volatility (2x)" produces correct values (especially the max side)
+
+- save the full url of the client website (e.g., "https://www.mijnpaerel.nl") somewhere in the database, so that links to the website within generated emails will work properly
 
 
 - keep the current AccountId between contact-specific pages (PortfolioPositions / [Charts] / Notas / FinancialReports / FinancialPlanner)
@@ -37,9 +22,6 @@ Small:
 
 - use the Tabs control for the Extras (with/without sliders)
 
-- check/correct GoalSeek for 'Chance of meeting target' = 80%
-
-* add new field to table RemisierEmployees (and new CheckBox column on page 'Remisier Logins') - HasSignedConfidentialityAgreement - which authorizes access to page 'Monitor Portefeuille'; also hide link to 'Monitor Portefeuille' on page 'Client Portfolios', if the field value is 'false'
 
 * check if moving the sliders causes any trip to the database
 * calculate Market Uncertainty with two times (2x) standard deviation (volatility) (request of Sandor and the brokers)
@@ -56,14 +38,18 @@ Small:
 * round 'Chance of reaching target' to a whole number (no decimals); adjust the color flag accordingly (e.g., 49.7% should display as 50%, and show as yellow, not red); also change on page Client Portfolios
 * translate: "Market uncertainty", "History", "Volatility" ("Volatiliteit"?), Calculate/Recalculate (button), "Update target" (+ "Save target" and "Cancel"), "Please fill/correct fields with *"
 
+*(o) write a SQL script that adds PreProd usernames to the database, so that it will still work even after being restored from the Production db
+*(o) add new field to table RemisierEmployees (and new CheckBox column on page 'Remisier Logins') - HasSignedConfidentialityAgreement - which authorizes access to page 'Monitor Portefeuille'; also hide link to 'Monitor Portefeuille' on page 'Client Portfolios', if the field value is 'false'
+
+
+
 
 Small bugs:
-
-- page PositionTxsCash.aspx generates an error ("Invalid column name 'IsSystem'.")
 
 - TrafficLight image (and/or its border) don't look well when printed (margins are chopped off)
 
 - layout "collapses" after pressing link "Cancel" (for target update) in IE7; moreover, "display: inline-table" does not seem to work with IE7 (there is no space at all between Save and Cancel)
+
 
 * page 'Client Portfolios' crashes when an account doesn't have a model (e.g., account 'EGBH30030')
 * page 'Client Portfolios': logging in as remisier employee 'M. Calame' of remisier 'Arthur en Arthur' causes exception 'Contact not authorized or not found' (because a specific client has only active accounts which are not "owned" by the current remisier, and the account that does belong to the current remisier is inactive, so method IsContactOwned returns 'false')
@@ -71,3 +57,21 @@ Small bugs:
 * double-click on an AccountNumber (page Client Portfolios) selects "EGVL012738 [Sunny (80% or over)]", instead of just the number (when doing copy/paste)
 * Safari does not print the euro sign (on paper/preview) (Windows only)
 * pressing Tab while in TextBox "Doelvermogen" moves focus to Save/Cancel link buttons first, instead of TextBox underneath
+
+*(o) page PositionTxsCash.aspx generates an error ("Invalid column name 'IsSystem'.")
+
+
+
+
+Big:
+
+* Main curve [old Excel sheet]
+* Chance of meeting target (traffic lights) [old Excel sheet]
+* History (Total Portfolio Value)
+* Target curve (red) [new Excel sheet]
+* Extra periodical/initial [new Excel sheet]
+* Market uncertainty (SplineRange) [old Excel sheet]
+* store Target amount on the Account (as well as other details: current Yearly Deposit, Years Left, etc.)
+* change field YearsLeft into TargetEndDate
+
+*(o) popup(s) with details: model composition (pie chart), numerical details (standard deviation etc.)
