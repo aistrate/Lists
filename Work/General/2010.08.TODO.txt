@@ -2,7 +2,7 @@
 
 - bug sent by Kevin (Financial Planner): "GoalSeek could not find a solution in 2000 cycles." (probably solved by the point above)
 
-- new page: Asset Manager Logins (modeled on pages Client Logins and Remisier Logins); maybe create a new type of login, Admin (or maybe give Stichting employees the rights to administer AM logins); either way, these users will be created manually (by design)
+- new page: Asset Manager Logins (modeled on pages Client Logins and Remisier Logins); maybe create a new type of login, Admin (or give Stichting employees the rights to administer AM logins, or the Compliance officer); either way, these users will be created manually (by design), or through a SQL script
 
 
 - Charts page: improve performance by caching the series already retrieved (set EnableViewState = true for the Dundas.Chart control)
