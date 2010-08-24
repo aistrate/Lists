@@ -1,6 +1,6 @@
-- correct the formula for EffectivePeriod, to include the net present value (NPV) of the periodic deposits (column "C | npv" on the Excel sheet)
+- correct formula for EffectivePeriod, to include the net present value (NPV) of the periodic deposits (column "C | npv" on the Excel sheet)
 
-- bug sent by Kevin (Financial Planner): "GoalSeek could not find a solution in 2000 cycles." (probably solved by the point above)
+- bug sent by Kevin (Financial Planner): "GoalSeek could not find a solution in 2000 cycles." (probably solved by correcting the EffectivePeriod formula)
 
 - new page: Asset Manager Logins (modeled on pages Client Logins and Remisier Logins); maybe create a new type of login, Admin (or give Stichting employees the rights to administer AM logins, or the Compliance officer); either way, these users will be created manually (by design), or through a SQL script
 
