@@ -1,4 +1,7 @@
-- how to find the Insert key on Apple keyboards: it is the 0 (zero) key on the NumPad
+- key mappings for MS Windows features on the Apple keyboard:
+    - Print Screen: fn+shift+F11
+    - Insert: fn+Return or fn+Enter (or 0 on numpad, with NumLock on)
+    - NumLock: Clear
 
 - how to remove a program from the "Open With" list in Windows Explorer: go to this Registry key:
     HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.<extension>\OpenWithList
