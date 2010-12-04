@@ -2,6 +2,13 @@ Frequently-used Git commands:
 
 $ git status
 $ git status -s                   # just name and status
+
+$ git status -unormal             # show untracked files and directories;
+                                  # same as 'git status'
+$ git status -uall                # also show individual files in untracked directories
+$ git status -u                   # same as 'git status -uall'
+$ git status -uno                 # don't show untracked files
+
 $ git add .
 $ git rm <file>
 $ git commit -m 'message'
