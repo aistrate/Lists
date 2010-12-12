@@ -1,0 +1,12 @@
+- key mappings for MS Windows features on the Apple keyboard:
+    - Print Screen: fn+shift+F11
+    - Insert: fn+Return or fn+Enter (or 0 on numpad, with NumLock on)
+    - NumLock: Clear
+
+- to remove a program from the "Open With" list in Windows Explorer, go to this
+  Registry key:
+    HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.<extension>\OpenWithList
+
+- in Visual Studio, when the cursor goes beyond the end of the line (both with the mouse
+  and the arrow keys): go to Tools / Options... / Text Editor / All Languages / General,
+  and turn off option "Enable virtual space"

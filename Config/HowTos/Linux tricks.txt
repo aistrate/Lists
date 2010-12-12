@@ -1,4 +1,0 @@
-- how to make Adobe Reader the default application for opening PDF's:
-  - go to folder ~/.local/share/applications
-  - add this line to files mimeapps.list (semicolon) and default.list (no semicolon):
-    application/pdf=acroread.desktop;

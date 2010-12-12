@@ -1,0 +1,31 @@
+- to make a symbolic (soft) link to a file having path name <file-path>:
+
+    ln -s <file-path> <link-name>
+   
+  [In the 'man ln' page, the old (existing) <file-path> is called source_file, and
+   the newly created link, target_file (Mac OS X).]
+
+
+- to add a directory to the PATH environment variable, add this to file ~/.profile:
+
+    export PATH=<path>:$PATH
+   
+  If the path is still not seen by Emacs, add this to file ~/.emacs:
+
+    (setenv "PATH" (concat (getenv "PATH") ":<path>"))
+    (setq exec-path (append exec-path '("<path>")))
+
+
+- to give a script 'execute' permission:
+
+    $ chmod 755 my_script
+
+
+- to make a file available for execution from any directory, put it in $HOME/bin.
+
+  Check whether $HOME/bin is in $PATH. If not, add this to file .profile
+  (or .bash_profile) in the $HOME directory:
+
+    if [ -d "$HOME/bin" ] ; then
+        PATH="$HOME/bin:$PATH"
+    fi
