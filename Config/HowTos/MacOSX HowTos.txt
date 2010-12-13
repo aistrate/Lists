@@ -1,0 +1,11 @@
+- to inherit the value of the $PATH from the shell into Emacs (or any application in
+  Mac OS X), insert this into file /etc/profile (the first two lines are probably there
+  already):
+
+    if [ -x /usr/libexec/path_helper ]; then
+        eval `/usr/libexec/path_helper -s`
+        defaults write $HOME/.MacOSX/environment PATH "$PATH"
+    fi
+
+  You will need to restart the computer every time when the PATH variable is changed,
+  for the changes to take effect.
