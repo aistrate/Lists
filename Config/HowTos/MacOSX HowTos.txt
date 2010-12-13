@@ -9,3 +9,7 @@
 
   You will need to restart the computer every time when the PATH variable is changed,
   for the changes to take effect.
+
+- to change the PATH variable for Emacs etc. directly (in case the previous trick didn't
+  work), go to file $HOME/.MacOSX/environment.plist, and modify the value of PATH,
+  using the default editor (Property List Editor)
