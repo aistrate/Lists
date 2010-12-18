@@ -406,3 +406,72 @@ Telefoon: 020-4889951
 Openingstijden:
 Maandag t/m vrijdag: 9:00 tot 21:00
 Zaterdag: 9:00 tot 18:00
+
+
+21-22.
+Blokker
+Mercatorplein 88
+1056 CL Amsterdam
+Tel.: 0206166349
+
+Blokker
+Kinkerstraat 260-262
+1053 GA Amsterdam
+Tel.: 0206184407
+
+Openingstijden:
+maandag:   13:00 - 18:00
+dinsdag:   09:00 - 18:00
+woensdag:  09:00 - 18:00
+donderdag: 09:00 - 21:00
+vrijdag:   09:00 - 18:00
+zaterdag:  09:00 - 17:00
+zondag:    Gesloten
+
+
+23.
+Blokker
+Jan van Galenstraat 107A
+1056 BK Amsterdam
+Tel.: 0206123046
+
+Openingstijden:
+maandag:   11:00 - 18:00
+dinsdag:   09:00 - 18:00
+woensdag:  09:00 - 18:00
+donderdag: 09:00 - 18:00
+vrijdag:   09:00 - 18:00
+zaterdag:  09:00 - 17:00
+zondag:    Gesloten
+
+
+24.
+Blokker
+Kalverstraat 41
+1012 NZ Amsterdam
+Tel.: 0206234454
+
+Openingstijden:
+maandag:   12:00 - 18:00
+dinsdag:   09:30 - 18:00
+woensdag:  09:30 - 18:00
+donderdag: 09:30 - 21:00
+vrijdag:   09:30 - 18:00
+zaterdag:  09:30 - 18:00
+zondag:    12:00 - 18:00
+
+
+25.
+Blokker
+Damrak 28-30
+1012 LJ Amsterdam
+Tel.: 0206249801
+
+Openingstijden:
+maandag:   10:00 - 18:00
+dinsdag:   09:00 - 18:00
+woensdag:  09:00 - 18:00
+donderdag: 09:00 - 21:00
+vrijdag:   09:00 - 21:00
+zaterdag:  09:00 - 18:00
+zondag:    11:00 - 18:00
