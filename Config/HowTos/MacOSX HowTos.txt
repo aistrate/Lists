@@ -13,3 +13,17 @@
 - to change the PATH variable for Emacs etc. directly (in case the previous trick didn't
   work), go to file $HOME/.MacOSX/environment.plist, and modify the value of PATH,
   using the default editor (Property List Editor)
+
+- how to enable native NTFS read/write support:
+    - In Terminal, type 'diskutil info /Volumes/volume_name', where 'volume_name' is the
+      name of the NTFS volume. From the output, copy the 'Volume UUID' value to the
+      clipboard.
+    - Back up /etc/fstab if you have it; it shouldn't be there in a default install.
+    - Type 'sudo emacs /etc/fstab'. (Use 'nano' if emacs is not available.)
+    - In the editor, type 'UUID=', then paste the UUID number you copied from the
+      clipboard. Type a Space, then type 'none ntfs rw'. The final line should look like
+      this: 'UUID=123-456-789 none ntfs rw', where 123-456-789 is the UUID you copied in
+      the first step.
+    - Repeat the above steps for any other NTFS drives/partitions you have.
+    - Save the file and quit emacs (or nano: Control-X, Y, Enter), then restart your
+      system.
