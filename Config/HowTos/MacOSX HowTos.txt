@@ -27,3 +27,9 @@
     - Repeat the above steps for any other NTFS drives/partitions you have.
     - Save the file and quit emacs (or nano: Control-X, Y, Enter), then restart your
       system.
+
+- how to capture a screen shot:
+    - use Grab (bundled utility, located in the Applications > Utilities folder)
+    - choose menu Capture > Window (or Cmd+Shift+W); the new screen shot image will open
+      in a new window
+    - save the image
