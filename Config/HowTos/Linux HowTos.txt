@@ -2,3 +2,15 @@
     - go to folder ~/.local/share/applications
     - add this line to files mimeapps.list (semicolon) and default.list (no semicolon):
           application/pdf=acroread.desktop;
+
+- if Ubuntu loses network connection when running in Parallels:
+    - go to VM's configuration dialog, in Hardware > Network 1
+    - choose Type: [Bridged Network] AirPort (instead of the default, "Shared Network")
+    - check "Send the host's MAC address to DHCP server"
+    - restart the VM
+
+- to install Java browser plugin on Chrome and Firefox, as well as support for
+  multimedia formats such as mp3, avi and encrypted DVDs (and other new-system usability
+  gotchas), follow the instructions here (Ubuntu Linux 10.10):
+
+    http://www.futuredesktop.org/
