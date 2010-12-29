@@ -6,7 +6,7 @@
 - if Ubuntu loses network connection when running in Parallels:
     - go to VM's configuration dialog, in Hardware > Network 1
     - choose Type: [Bridged Network] AirPort (instead of the default, "Shared Network")
-    - check "Send the host's MAC address to DHCP server"
+    - check OFF "Send the host's MAC address to DHCP server"
     - restart the VM
 
 - to install Java browser plugin on Chrome and Firefox, as well as support for
