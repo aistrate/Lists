@@ -20,6 +20,8 @@ Things I want to program:
 
 - a constraint progamming engine (as a C# library, called a 'constraint solving toolkit')
 
+- a spreadsheet (Excel-like, with formulas etc.)
+
 
 
 Less likely:
