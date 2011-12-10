@@ -1,0 +1,9 @@
+sudo rm -r /Library/PreferencePanes/NTFS-3G.prefPane
+sudo rm -r /System/Library/Filesystems/ntfs-3g.fs
+sudo rm /sbin/mount_ntfs-3g /sbin/newfs_ntfs-3g
+sudo rm /usr/local/bin/fuse_wait /usr/local/bin/ntfs-3g /usr/local/bin/ntfs-3g.probe /usr/local/bin/ntfs-3g_daemon /usr/local/bin/ntfscat /usr/local/bin/ntfscluster /usr/local/bin/ntfscmp /usr/local/bin/ntfsfix /usr/local/bin/ntfsinfo /usr/local/bin/ntfsls
+sudo rm -r /usr/local/include/ntfs /usr/local/include/ntfs-3g
+sudo rm /usr/local/lib/libntfs.* /usr/local/lib/libntfs-3g.* /usr/local/pkgconfig/libntfs-3g.pc
+sudo rm /usr/local/sbin/mkntfs /usr/local/sbin/ntfsclone /usr/local/sbin/ntfscp /usr/local/sbin/ntfslabel /usr/local/sbin/ntfsresize /usr/local/sbin/ntfsundelete
+sudo rm -r /usr/local/share/doc/ntfs-3g /usr/local/share/doc/ntfsprogs
+sudo rm /usr/local/share/man/man8/libntfs-gnomevfs.8 /usr/local/share/man/man8/mkfs.ntfs.8 /usr/local/share/man/man8/mkntfs.8 /usr/local/share/man/man8/mount.ntfs-3g.8 /usr/local/share/man/man8/ntfs-3g.8 /usr/local/share/man/man8/ntfs-3g.probe.8 /usr/local/share/man/man8/ntfscat.8 /usr/local/share/man/man8/ntfsclone.8 /usr/local/share/man/man8/ntfscluster.8 /usr/local/share/man/man8/ntfscmp.8 /usr/local/share/man/man8/ntfscp.8 /usr/local/share/man/man8/ntfsfix.8 /usr/local/share/man/man8/ntfsinfo.8 /usr/local/share/man/man8/ntfslabel.8 /usr/local/share/man/man8/ntfsls.8 /usr/local/share/man/man8/ntfsmount.8 /usr/local/share/man/man8/ntfsprogs.8 /usr/local/share/man/man8/ntfsresize.8 /usr/local/share/man/man8/ntfsundelete.8

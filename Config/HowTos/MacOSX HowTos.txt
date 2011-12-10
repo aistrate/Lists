@@ -15,6 +15,10 @@
   using the default editor (Property List Editor)
 
 - how to enable native NTFS read/write support:
+    - first, uninstall NTFS-3G:
+        - run 'sudo port uninstall macfuse'
+        - run script: ./Scripts/del-ntfs-3g (give it 'execute' permission, if necessary)
+        - if the Windows disk is not mounted: 'diskutil mountDisk /dev/disk0'
     - In Terminal, type 'diskutil info /Volumes/volume_name', where 'volume_name' is the
       name of the NTFS volume. From the output, copy the 'Volume UUID' value to the
       clipboard.
