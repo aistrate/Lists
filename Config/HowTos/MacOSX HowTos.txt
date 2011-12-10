@@ -37,3 +37,7 @@
     - choose menu Capture > Window (or Cmd+Shift+W); the new screen shot image will open
       in a new window
     - save the image
+
+- in Terminal, to have the Option key (on the keyboard) act as meta key (useful in Emacs):
+    - in the terminal's main menu, go to Terminal -> Preferences -> Settings -> Keyboard
+    - select the “Use option as meta key” checkbox
